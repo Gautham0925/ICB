@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>Plumbers - Plumbing Services HTML Website Template</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="author" content="templatesjungle">
-  <meta name="keywords" content="website template">
-  <meta name="description" content="website template">
-
-  <!--Bootstrap ================================================== -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-
-  <!--vendor css ================================================== -->
-  <link rel="stylesheet" type="text/css" href="css/vendor.css">
-
-
-  <!--Link Swiper's CSS ================================================== -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-  <!-- Style Sheet ================================================== -->
-  <link rel="stylesheet" type="text/css" href="style.css">
-
-  <!-- Google Fonts ================================================== -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-
-</head>
+@ -36,147 +36,7 @@
 
 <body>
 
@@ -177,21 +143,16 @@
     </symbol>
   </svg>
 
+  <!-- Header Top -->
   <header id="header-top" class="d-none d-lg-flex">
     <div class="container">
       <div class="d-md-flex justify-content-between align-items-center py-3">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/main-logo.png" class="logo img-fluid">
-        </a>
-        <p class="phone m-0 fs-5 text-white fw-medium text-capitalize d-flex align-items-center">
-          <svg class="text-primary me-2" width="25" height="25">
-            <use xlink:href="#phone"></use>
-          </svg>666-333-9999
-        </p>
-      </div>
+@ -192,397 +52,191 @@
     </div>
   </header>
 
+
+  <!-- Header -->
   <header id="header">
     <div class="container-lg px-0 px-lg-2">
       <nav id="primary-header" class="navbar navbar-expand-lg bg-light rounded-3 shadow-sm z-2 py-2 py-lg-3">
@@ -201,6 +162,15 @@
               <img src="images/dark-logo.png" class="logo img-fluid">
             </a>
           </div>
+        <!-- Primary Navigation -->
+        <nav id="primary-header" class="navbar navbar-expand-lg bg-light rounded-3 shadow-sm z-2 py-2 py-lg-3">
+            <div class="container justify-content-between">
+                <!-- Logo Section -->
+                <div class="d-flex d-lg-none">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/dark-logo.png" class="logo img-fluid">
+                    </a>
+                </div>
 
           <button class="navbar-toggler d-flex d-lg-none justify-content-end border-0 shadow-none p-0" type="button"
             data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false">
@@ -282,6 +252,11 @@
                     aria-expanded="false">
                     <svg class="search" width="24" height="24">
                       <use xlink:href="#search"></use>
+                <!-- Navbar Toggle Button -->
+                <button class="navbar-toggler d-flex d-lg-none justify-content-end border-0 shadow-none p-0" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false">
+                    <svg class="navbar-icon" width="60" height="60">
+                        <use xlink:href="#navbar-icon"></use>
                     </svg>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 p-3 shadow">
@@ -300,37 +275,146 @@
           </div>
         </div>
       </nav>
+                </button>
+
+                <!-- Offcanvas Menu -->
+                <div class="header-bottom offcanvas offcanvas-end" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+                    <!-- Offcanvas Header -->
+                    <div class="offcanvas-header px-4 mt-3 mb-1">
+                        <button type="button" class="btn-close btn-close-black shadow-none" data-bs-dismiss="offcanvas"
+                            aria-label="Close" data-bs-target="#bdNavbar"></button>
+                    </div>
+
+                    <!-- Offcanvas Body -->
+                    <div class="offcanvas-body d-flex justify-content-lg-center align-items-lg-center">
+                        <!-- Navigation Links -->
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <!-- Home Link -->
+                            <li class="nav-item border-end py-1 py-lg-0">
+                                <a class="nav-link active p-0" aria-current="page" href="index.html">Home</a>
+                            </li>
+
+                            <!-- Dropdown Menu -->
+                            <li class="nav-item border-end py-1 py-lg-0 dropdown">
+                                <a class="nav-link p-0 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                    aria-expanded="false">Pages</a>
+                                <!-- Dropdown Links -->
+                                <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 shadow">
+                                    <li><a href="templates/about.html" class="dropdown-item">About </a></li>
+                                    <li><a href="templates/blog.html" class="dropdown-item">Blog </a></li>
+                                    <li><a href="templates/ctf.html" class="dropdown-item">CTF </a></li>
+                                    <li><a href="templates/quiz.html" class="dropdown-item">Quiz </a></li>
+                                    <li><a href="templates/events.html" class="dropdown-item">Events </a></li>
+                                    <li><a href="templates/contact.html" class="dropdown-item">Contact </a></li>
+                                    <!-- Add more dropdown items here -->
+                                </ul>
+                            </li>
+
+                            <!-- Other Navigation Links -->
+                            <li class="nav-item border-end py-1 py-lg-0">
+                                <a class="nav-link p-0" href="templates/about.html">About</a>
+                            </li>
+                            <li class="nav-item border-end py-1 py-lg-0">
+                                <a class="nav-link p-0" href="templates/blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item border-end py-1 py-lg-0">
+                                <a class="nav-link p-0" href="templates/ctf.html">CTF</a>
+                            </li>
+                            <li class="nav-item border-end py-1 py-lg-0">
+                                <a class="nav-link p-0" href="templates/quiz.html">Quiz</a>
+                            </li>
+                            <li class="nav-item border-end py-1 py-lg-0">
+                                <a class="nav-link p-0" href="templates/events.html">Events</a>
+                            </li>
+                            <li class="nav-item border-end py-1 py-lg-0">
+                                <a class="nav-link p-0" href="templates/contact.html">Contact</a>
+                            </li>
+                            <!-- Add more links as needed -->
+
+                            <!-- External Link -->
+                            <li class="nav-item border-end py-1 py-lg-0">
+                                <a class="nav-link p-0 fw-bold text-uppercase"
+                                    href="https://www.aiet.org.in/" target="_blank">AIET</a>
+                            </li>
+                           
+                        </ul>
+                    </div> <!-- End of Offcanvas Body -->
+                </div> <!-- End of Offcanvas Menu -->
+            </div> <!-- End of Container -->
+        </nav>
     </div>
   </header>
+</header>
 
+
+
+  <!-- Body -->
   <div class="main-body container-xxl bg-white position-relative rounded-4 p-0 mb-lg-5">
 
     <section id="slider" class="pt-5 px-3">
+
+    <!-- Slider -->
+    <section id="slider" class="pt-5 px-3" style="background-image: url('images/slider-background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
       <div class="swiper slider position-relative rounded-3">
         <div class="swiper-wrapper">
+          <!-- Slide 1 -->
           <div class="swiper-slide d-flex"
             style="background-image: url(images/slider-image.jpg); background-size: cover; background-repeat: no-repeat; height: 80vh; background-position: center;">
             <div class="container m-auto ">
+            style="background-image: url(images/Background.jpg); background-size: cover; background-repeat: no-repeat; height: 80vh; background-position: center;">
+            <div class="container m-auto">
               <div class="text-start col-xl-6">
                 <h6 class="banner-topic text-white"> <span class="text-primary">| </span> fAST, EFFECTIVE & AFFORDABLE
+                <h6 class="banner-topic text-white"> 
+                  <span class="text-primary">| </span> Innovation in Technology
                 </h6>
                 <h2 class="banner-title display-2 fw-bolder fst-italic text-white">Expert <span
                     class="text-primary">Plumbing
                     Services</span> in Dallas.</h2>
                 <a href="services.html" class="btn btn-light mt-4">Our Services</a>
+                <h2 class="banner-title display-2 fw-bolder fst-italic text-white">
+                  Pioneering <span class="text-primary">ICB Solutions</span> for the Future.
+                </h2>
+                <a href="projects.html" class="btn btn-light mt-4">View Projects</a>
               </div>
             </div>
           </div>
+          
+          <!-- Slide 2 -->
           <div class="swiper-slide d-flex"
             style="background-image: url(images/slider-image1.jpg); background-size: cover; background-repeat: no-repeat; height: 80vh; background-position: center;">
             <div class="container m-auto ">
+            style="background-image: url(images/Background.jpg); background-size: cover; background-repeat: no-repeat; height: 80vh; background-position: center;">
+            <div class="container m-auto">
               <div class="text-start col-xl-6">
                 <h6 class="banner-topic text-white"> <span class="text-primary">| </span> fAST, EFFECTIVE & AFFORDABLE
+                <h6 class="banner-topic text-white"> 
+                  <span class="text-primary">| </span> Advancing Research
                 </h6>
                 <h2 class="banner-title display-2 fw-bolder fst-italic text-white">Expert <span
                     class="text-primary">Plumbing
                     Services</span> in Texas.</h2>
                 <a href="services.html" class="btn btn-light mt-4">Our Services</a>
+                <h2 class="banner-title display-2 fw-bolder fst-italic text-white">
+                  Cutting-Edge <span class="text-primary">Cybersecurity</span> Research and Solutions.
+                </h2>
+                <a href="research.html" class="btn btn-light mt-4">Explore Research</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Slide 3 -->
+          <div class="swiper-slide d-flex"
+            style="background-image: url(images/Background.jpg); background-size: cover; background-repeat: no-repeat; height: 80vh; background-position: center;">
+            <div class="container m-auto">
+              <div class="text-start col-xl-6">
+                <h6 class="banner-topic text-white"> 
+                  <span class="text-primary">| </span> Blockchain Integration
+                </h6>
+                <h2 class="banner-title display-2 fw-bolder fst-italic text-white">
+                  Exploring <span class="text-primary">Blockchain</span> for Secure Digital Solutions.
+                </h2>
+                <a href="projects.html" class="btn btn-light mt-4">Discover Projects</a>
               </div>
             </div>
           </div>
@@ -338,12 +422,21 @@
         </div>
         <div
           class="position-absolute top-50 end-0 translate-middle-y z-2 d-xl-flex d-none m-auto me-0 me-md-5 main-slider-button-next">
+    
+        <!-- Pagination -->
+        <div class="slider-pagination swiper-pagination pb-4 d-block d-xl-none"></div>
+    
+        <!-- Next Button -->
+        <div class="position-absolute top-50 end-0 translate-middle-y z-2 d-xl-flex d-none m-auto me-0 me-md-5 main-slider-button-next">
           <svg class="chevron-forward-circle light-color" width="60" height="60">
             <use xlink:href="#chevron-forward-circle"></use>
           </svg>
         </div>
         <div
           class="position-absolute top-50 start-0 translate-middle-y z-2 d-xl-flex d-none m-auto ms-0 ms-md-5 main-slider-button-prev">
+    
+        <!-- Previous Button -->
+        <div class="position-absolute top-50 start-0 translate-middle-y z-2 d-xl-flex d-none m-auto ms-0 ms-md-5 main-slider-button-prev">
           <svg class="chevron-back-circle light-color" width="60" height="60">
             <use xlink:href="#chevron-back-circle"></use>
           </svg>
@@ -569,6 +662,9 @@
         </div>
       </div>
     </section>
+    
+    
+    <!-- Body -->
 
     <section id="booking-testimonial" class="bg-gray padding-medium">
       <div class="container">
@@ -579,15 +675,21 @@
               <p>Certainly! It seems like you're looking for information on the correct methods to fix something. Could
                 you please provide more context or specify what you're trying to fix? This will help me provide you with
                 accurate and relevant information on the right ways to address.
+              <h3 class="display-6 fw-bold mb-3">Enhance Your Tech Expertise</h3>
+              <p>
+                Dive into the transformative world of IoT, Cybersecurity, and Blockchain. These cutting-edge technologies
+                are shaping the future of industries worldwide. Learn how they integrate, secure, and optimize digital
+                solutions for a connected world.
               </p>
               <a class="btn btn-primary mt-4" href="quote.html">Get your estimate</a>
+              <a class="btn btn-primary mt-4" href="quote.html">Explore Opportunities</a>
             </div>
 
+    
             <div class="col-lg-6 mt-5 mt-lg-0">
               <div class="d-flex mb-4">
                 <div class="me-2">
-                  <svg class="text-primary mb-3" width="26" height="26">
-                    <use xlink:href="#emoticon-happy"></use>
+@ -591,10 +245,11 @@
                   </svg>
                 </div>
                 <div>
@@ -595,12 +697,15 @@
                   <p>Your satisfaction is our ultimate goal. We are not satisfied until you are thrilled with the final
                     results. We encourage feedback throughout the process to ensure that we meet and exceed your
                     expectations.</p>
+                  <h6>IoT Innovations</h6>
+                  <p>
+                    Discover how IoT connects devices seamlessly, enabling smarter homes, cities, and industries. 
+                    Unlock the potential of data-driven insights with intelligent connectivity.
+                  </p>
                 </div>
               </div>
               <div class="d-flex mb-4">
-                <div class="me-2">
-                  <svg class="text-primary mb-3" width="26" height="26">
-                    <use xlink:href="#shield-check"></use>
+@ -604,10 +259,11 @@
                   </svg>
                 </div>
                 <div>
@@ -608,18 +713,26 @@
                   <p>Our team consists of skilled painters who bring years of experience to every project. From color
                     selection to surface preparation and application, we approach each step with professionalism and
                     expertise.</p>
+                  <h6>Cybersecurity Solutions</h6>
+                  <p>
+                    Protect your digital assets with advanced cybersecurity practices. Learn how to mitigate risks,
+                    secure networks, and stay ahead of emerging cyber threats.
+                  </p>
                 </div>
               </div>
               <div class="d-flex">
-                <div class="me-2">
-                  <svg class="text-primary mb-3" width="26" height="26">
-                    <use xlink:href="#hand-heart"></use>
+@ -617,454 +273,18 @@
                   </svg>
                 </div>
                 <div>
                   <h6>Warranty and Assurance</h6>
                   <p>We stand behind the quality of our work. Our projects are backed by our warranty, giving you
                     confidence in the longevity and durability of the painting work we provide.</p>
+                  <h6>Blockchain Revolution</h6>
+                  <p>
+                    Experience the power of blockchain in ensuring data integrity and enabling secure transactions.
+                    From cryptocurrency to smart contracts, explore its wide-ranging applications.
+                  </p>
                 </div>
               </div>
             </div>
@@ -1065,339 +1178,15 @@
 
       </div>
     </section>
+    </section> 
 
     <section id="blogs" class="padding-medium">
       <div class="container">
-        <h3 class="display-6 fw-bold text-center mb-5">Stay Up To Date</h3>
-        <div class="row mt-4">
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-            <div class="card-item">
-              <div class="card border-0 bg-transparent">
-                <div class="card-image">
-                  <a href="blog-single.html">
-                    <img src="images/blog1.jpg" alt="post-img" class="post-image img-fluid">
-                  </a>
-                </div>
-              </div>
-              <div class="card-body p-0 mt-2">
-                <h6 class="mt-3">
-                  <a href="blog-single.html">Common Plumbing Issues and How to Prevent Them</a>
-                </h6>
-                <p>Elit adipi massa diam in dignissim. Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam
-                  vestibu adipi massa diamlum... <a href="blog-single.html" class="text-decoration-underline"><em>Read
-                      more</em></a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-            <div class="card-item">
-              <div class="card border-0 bg-transparent">
-                <div class="card-image">
-                  <a href="blog-single.html">
-                    <img src="images/blog2.jpg" alt="post-img" class="post-image img-fluid">
-                  </a>
-                </div>
-              </div>
-              <div class="card-body p-0 mt-2">
-                <h6 class="mt-3">
-                  <a href="blog-single.html">The Importance of Regular Plumbing Maintenance</a>
-                </h6>
-                <p>Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam vestibulum. Elit adipi massa diam in
-                  dignissim... <a href="blog-single.html" class="text-decoration-underline"><em>Read more</em></a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-            <div class="card-item">
-              <div class="card border-0 bg-transparent">
-                <div class="card-image">
-                  <a href="blog-single.html">
-                    <img src="images/blog3.jpg" alt="post-img" class="post-image img-fluid">
-                  </a>
-                </div>
-              </div>
-              <div class="card-body p-0 mt-2">
-                <h6 class="mt-3">
-                  <a href="blog-single.html">Choosing the Right Fixtures for Your Bathroom Remodel</a>
-                </h6>
-                <p>Pulvinar sagittis ut dis venenatis nunc nunc vitae aliquam vestibulum. Elit adipi massa diam in
-                  dignissim... <a href="blog-single.html" class="text-decoration-underline"><em>Read more</em></a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="text-center">
-          <a class="btn btn-primary mt-4" href="blog.html">Read articles</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="quote" class="bg-gray padding-small">
-      <div class="container">
-        <div class="text-center mb-4">
-          <h3 class="display-6 fw-bold text-center">Need a Plumbing Service?</h3>
-          <p>Get in touch with us, or call our team at 909-342-2521 today!</p>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-lg-6">
-            <div class="mapouter">
-              <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas"
-                  src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                  href="https://getasearch.com/fmovies"></a><br>
-                <style>
-                  .mapouter {
-                    position: relative;
-                    text-align: right;
-                    height: 500px;
-                    width: 100%;
-                  }
-                </style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
-                <style>
-                  .gmap_canvas {
-                    overflow: hidden;
-                    background: none !important;
-                    height: 500px;
-                    width: 100%;
-                  }
-                </style>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <form class="contact-form row mt-5 mt-lg-0">
-              <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
-                <input type="text" name="name" placeholder="Full Name*"
-                  class="form-control w-100 rounded-0 border-0 ps-3 py-2" required="">
-              </div>
-              <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
-                <input type="email" name="email" placeholder="Email*"
-                  class="form-control w-100 rounded-0 border-0 ps-3 py-2" required="">
-              </div>
-              <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
-                <input type="text" name="phone" placeholder="Phone*"
-                  class="form-control w-100 rounded-0 border-0 ps-3 py-2" required="">
-              </div>
-              <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
-                <input type="text" name="zip" placeholder="Zip*" class="form-control w-100 rounded-0 border-0 ps-3 py-2"
-                  required="">
-              </div>
-              <div class="col-md-12 col-sm-12 mb-4">
-                <select class="form-select focus-transparent form-control w-100 rounded-0 border-0 ps-3 py-2 text-body "
-                  aria-invalid="false" name="choose">
-                  <option value="Select Your Service">Plumbing services requested</option>
-                  <option value="1">Leak Detection and Repair</option>
-                  <option value="2">Preventive Maintenance</option>
-                  <option value="3">Water Heater Services</option>
-                  <option value="4">Gas Line Services</option>
-                  <option value="5">Toilet and flush repair</option>
-                  <option value="6">Water Quality and Filtration</option>
-                  <option value="7">Fixture Installation</option>
-                  <option value="8">Leak Detection and Repair</option>
-                </select>
-              </div>
-              <div class="col-md-4 col-sm-12 mb-4">
-                <input type="text" name="address" placeholder="Address"
-                  class="form-control w-100 rounded-0 border-0 ps-3 py-2">
-              </div>
-              <div class="col-md-4 col-sm-12 mb-4">
-                <input type="text" name="city" placeholder="City"
-                  class="form-control w-100 rounded-0 border-0 ps-3 py-2">
-              </div>
-              <div class="col-md-4 col-sm-12 mb-4">
-                <select class="form-select focus-transparent form-control w-100 rounded-0 border-0 ps-3 py-2 text-body "
-                  aria-invalid="false" name="choose">
-                  <option value="Select Your Service">State</option>
-                  <option value="Service">Florida</option>
-                  <option value="Service">Miami</option>
-                  <option value="Service">New York</option>
-                  <option value="Service">California</option>
-                  <option value="Service">Texas</option>
-                </select>
-              </div>
-              <div class="col-md-6 col-sm-12 mb-4">
-                <input type="date" name="date" class="form-control w-100 rounded-0 border-0 px-3 py-2 text-body">
-              </div>
-              <div class="col-md-6 col-sm-12 mb-4">
-                <input type="time" name="city" class="form-control w-100 rounded-0 border-0 px-3 py-2 text-body">
-              </div>
-              <div class="col-md-12 col-sm-12 mb-4">
-                <textarea class="form-control w-100 rounded-0 border-0 ps-3 py-2" rows="6" type="text" name="message"
-                  placeholder="Message"></textarea>
-              </div>
-              <div class="col-12">
-                <button class="btn btn-secondary" type="submit">Send information</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer id="footer">
-      <div class="container padding-medium pb-5">
-        <div class="row flex-wrap justify-content-between">
-          <div class="col-lg-3 col-md-6 pb-3">
-            <div class="footer-menu">
-              <img src="images/dark-logo.png" alt="logo">
-              <p>Deleniti libero placeat qui pariatur nihil. Ab officia odit
-                iusto ullam.</p>
-              <ul class="social-links d-flex flex-wrap list-unstyled">
-                <li class="social me-3">
-                  <a href="#">
-                    <svg class=" me-1" width="24" height="24">
-                      <use xlink:href="#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social me-3">
-                  <a href="#">
-                    <svg class=" me-1" width="24" height="24">
-                      <use xlink:href="#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social me-3">
-                  <a href="#">
-                    <svg class=" me-1" width="24" height="24">
-                      <use xlink:href="#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social me-3">
-                  <a href="#">
-                    <svg class=" me-1" width="24" height="24">
-                      <use xlink:href="#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social me-3">
-                  <a href="#">
-                    <svg class=" me-1" width="24" height="24">
-                      <use xlink:href="#youtube"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="offset-lg-1 col-lg-2 col-md-6 pb-3">
-            <div class="footer-menu">
-              <h6 class="widget-title pb-2 fw-semibold">Quick links</h6>
-              <ul class="menu-list d-flex flex-column list-unstyled">
-                <li class="pb-2">
-                  <a href="about.html">About Us</a>
-                </li>
-                <li class="pb-2">
-                  <a href="team.html">Our Team</a>
-                </li>
-                <li class="pb-2">
-                  <a href="services.html">Our Services</a>
-                </li>
-                <li class="pb-2">
-                  <a href="about.html">Why choose us</a>
-                </li>
-                <li class="pb-2">
-                  <a href="contact.html">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6 pb-3">
-            <div class="footer-menu">
-              <h6 class="widget-title pb-2 fw-semibold">Help</h6>
-              <ul class="menu-list d-flex flex-column list-unstyled">
-                <li class="pb-2">
-                  <a href="faq.html">FAQs</a>
-                </li>
-                <li class="pb-2">
-                  <a href="contact.html">Get in touch</a>
-                </li>
-                <li class="pb-2">
-                  <a href="about.html">Info</a>
-                </li>
-                <li class="pb-2">
-                  <a href="#">Privacy Policy</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 pb-3">
-            <div class="footer-menu">
-              <h6 class="widget-title pb-2 fw-semibold">Local Office</h6>
-              <ul class="menu-list d-flex flex-column list-unstyled">
-                <li class="text-capitalize d-flex align-items-center pb-2">
-                  <svg class="text-primary me-1" width="18" height="18">
-                    <use xlink:href="#location"></use>
-                  </svg><a href="#"> Phoenix, Arizona </a>
-                </li>
-                <li class="text-capitalize d-flex align-items-center pb-2">
-                  <svg class="text-primary me-1" width="18" height="18">
-                    <use xlink:href="#email"></use>
-                  </svg><a href="#"> youremail@gmail.com </a>
-                </li>
-                <li class="text-capitalize d-flex align-items-center pb-2">
-                  <svg class="text-primary me-1" width="18" height="18">
-                    <use xlink:href="#phone"></use>
-                  </svg><a href="#"> 888 333 9999 </a>
-                </li>
-                <li class="text-capitalize d-flex align-items-center pb-2">
-                  <svg class="text-primary me-1" width="18" height="18">
-                    <use xlink:href="#clock"></use>
-                  </svg><a href="#"> 8:00-18:00, Sat: Closed </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="border-top">
-        <div class="container footer-bottom d-md-flex text-center justify-content-between py-4">
-          <p class="mb-0">© 2024 Plumbers - All rights reserved</p>
-          <p class="mb-0">Free HTML Templates by: <a href="https://templatesjungle.com/" target="_blank"
-              class="text-decoration-underline fw-semibold"> TemplatesJungle</a></p>
-        </div>
-      </div>
-    </footer>
-
-  </div>
-
-  <!-- Video Popup -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-
-      <div class="modal-content">
-
-        <div class="modal-body">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="bi" width="40"
-              height="40">
-              <use xlink:href="#close-sharp"></use>
-            </svg></button>
-          <div class="ratio ratio-16x9">
-            <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
-              allow="autoplay"></iframe>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-
-
-  <!-- Scripts ================================================== -->
-  <script src="js/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="js/plugins.js"></script>
+@ -1398,6 +618,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="js/Slide-loop.js"></script>
 </body>
 
 </html>
